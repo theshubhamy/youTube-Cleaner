@@ -1,0 +1,10 @@
+/* Hide Shorts UI elements */
+a[href^='/shorts'],
+ytd-reel-shelf-renderer,
+ytd-rich-shelf-renderer[is-shorts] {
+  display: none !important;
+}
+
+ytd-guide-entry-renderer a[href^='/shorts'] {
+  display: none !important;
+}

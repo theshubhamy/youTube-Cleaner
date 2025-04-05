@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Hide YouTube Shorts & Ads",
+  "version": "1.0",
+  "description": "Hide Shorts and some ads from YouTube",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "action": {
+    "default_title": "YouTube Cleaner"
+  }
+}
